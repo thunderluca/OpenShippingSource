@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenShippingSource.Serializ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenShippingSource.Serialization.Xml", "src\OpenShippingSource.Serialization.Xml\OpenShippingSource.Serialization.Xml.csproj", "{C9ECB19B-BE61-463E-93EF-9B7AD03931C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{03BF5224-0207-4C58-A2D4-C9F1161B190E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenShippingSource.Test.Abstractions", "test\OpenShippingSource.Test.Abstractions\OpenShippingSource.Test.Abstractions.csproj", "{1A9B7213-7287-4A10-9EFB-07DD9EB80800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenShippingSource.Test.Http", "test\OpenShippingSource.Test.Http\OpenShippingSource.Test.Http.csproj", "{51FD34B7-0607-494C-98FD-E58FF411557F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +45,21 @@ Global
 		{C9ECB19B-BE61-463E-93EF-9B7AD03931C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9ECB19B-BE61-463E-93EF-9B7AD03931C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9ECB19B-BE61-463E-93EF-9B7AD03931C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9B7213-7287-4A10-9EFB-07DD9EB80800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9B7213-7287-4A10-9EFB-07DD9EB80800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9B7213-7287-4A10-9EFB-07DD9EB80800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9B7213-7287-4A10-9EFB-07DD9EB80800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FD34B7-0607-494C-98FD-E58FF411557F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FD34B7-0607-494C-98FD-E58FF411557F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FD34B7-0607-494C-98FD-E58FF411557F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FD34B7-0607-494C-98FD-E58FF411557F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A9B7213-7287-4A10-9EFB-07DD9EB80800} = {03BF5224-0207-4C58-A2D4-C9F1161B190E}
+		{51FD34B7-0607-494C-98FD-E58FF411557F} = {03BF5224-0207-4C58-A2D4-C9F1161B190E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68062EF7-98E6-4114-B861-13EC1D894EA2}
