@@ -5,16 +5,16 @@ namespace OpenShippingSource.Serialization
 {
     public interface IDeserializer
     {
-        T DeserializeStringAsObject<T>(string content);
+        IEnumerable<T> DeserializeBytesAsMultipleObjects<T>(byte[] bytes);
 
-        T DeserializeStreamAsObject<T>(Stream stream);
-
-        T DeserializeBytesAsObject<T>(IEnumerable<byte> bytes);
-
-        IEnumerable<T> DeserializeStringAsMultipleObjects<T>(string content);
+        T DeserializeBytesAsObject<T>(byte[] bytes);
 
         IEnumerable<T> DeserializeStreamAsMultipleObjects<T>(Stream stream);
 
-        IEnumerable<T> DeserializeBytesAsMultipleObjects<T>(IEnumerable<byte> bytes);
+        T DeserializeStreamAsObject<T>(Stream stream);
+
+        IEnumerable<T> DeserializeStringAsMultipleObjects<T>(string content);
+
+        T DeserializeStringAsObject<T>(string content);
     }
 }
